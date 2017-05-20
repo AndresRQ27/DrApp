@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="680.0" prefWidth="1240.0" stylesheets="/main/main.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="casosClinicos.medicamentos.MedicamentosController">
+   <children>
+      <VBox prefHeight="200.0" prefWidth="100.0" StackPane.alignment="TOP_CENTER">
+         <children>
+            <AnchorPane prefHeight="121.0" prefWidth="600.0">
+               <children>
+                  <Label alignment="CENTER" contentDisplay="CENTER" layoutX="510.0" layoutY="42.0" text="Medicamentos" textFill="WHITE">
+                     <font>
+                        <Font size="30.0" />
+                     </font>
+                  </Label>
+               </children>
+            </AnchorPane>
+            <TextArea prefHeight="476.0" prefWidth="1240.0" promptText="Lista de medicamentos">
+               <font>
+                  <Font size="16.0" />
+               </font></TextArea>
+            <AnchorPane prefHeight="86.0" prefWidth="1240.0">
+               <children>
+                  <Button fx:id="cancelar" layoutX="1105.0" layoutY="27.0" mnemonicParsing="false" text="Cancelar">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Button>
+                  <Button fx:id="guardar" layoutX="977.0" layoutY="27.0" mnemonicParsing="false" text="Guardar">
+                     <font>
+                        <Font name="Arial" size="16.0" />
+                     </font>
+                  </Button>
+               </children>
+            </AnchorPane>
+         </children>
+      </VBox>
+   </children>
+</StackPane>

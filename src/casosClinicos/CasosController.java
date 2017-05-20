@@ -21,11 +21,16 @@ public class CasosController {
     @FXML private TextField sangre;
     @FXML private TextField alergias;
     @FXML private TextField sintomas;
+    @FXML private Button eliminar;
+    @FXML private Button finalizar;
+    @FXML private Button examenes;
+    @FXML private Button medicamentos;
     @FXML private Button cancelar;
     @FXML private Button guardar;
 
     public void initialize() {}
 
+    //Siempre devovler json con las modificaciones
     public void initManager(final CasosManager casosManager) {
         guardar.setOnAction(event -> {
             if (verifyData()){
@@ -33,8 +38,20 @@ public class CasosController {
             }
         });
 
+        medicamentos.setOnAction(event -> casosManager.showMedScreen());
+
+        examenes.setOnAction(event -> casosManager.showExScreen());
+
+        finalizar.setOnAction(event -> {
+            //devolverse a ventana principal
+        });
+
+        eliminar.setOnAction(event -> {
+            //devolver un json vacio y ventana principal
+        });
+
         cancelar.setOnAction(event -> {
-            casosManager.cerrarManager();
+
         });
     }
 
@@ -48,7 +65,7 @@ public class CasosController {
         });
 
         cancelar.setOnAction(event -> {
-            casosManager.cerrarManager();
+
         });
     }
 

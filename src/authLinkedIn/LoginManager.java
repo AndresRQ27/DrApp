@@ -31,7 +31,8 @@ public class LoginManager {
   public void logout() {
     showLoginScreen();
   }
-  
+
+  //Función para abrir ventana
   public void showLoginScreen() {
     try {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
@@ -43,14 +44,12 @@ public class LoginManager {
     }
   }
 
+  //Ej para cambio de ventana
   private void showMainView(String sessionID) {
     try {
-      FXMLLoader loader = new FXMLLoader(
-        getClass().getResource("mainview.fxml")
-      );
+      FXMLLoader loader = new FXMLLoader(getClass().getResource("mainview.fxml"));
       scene.setRoot((Parent) loader.load());
-      MainViewController controller = 
-        loader.<MainViewController>getController();
+      MainViewController controller = loader.<MainViewController>getController();
       controller.initSessionID(this, sessionID);
     } catch (IOException ex) {
       Logger.getLogger(LoginManager.class.getName()).log(Level.SEVERE, null, ex);

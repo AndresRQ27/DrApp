@@ -14,7 +14,7 @@
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 
-<StackPane prefHeight="680.0" prefWidth="1240.0" stylesheets="/authLinkedIn/login.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="authLinkedIn.LoginController">
+<StackPane prefHeight="680.0" prefWidth="1240.0" stylesheets="/main/main.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="authLinkedIn.LoginController">
   <children>
     <StackPane prefHeight="246.0" prefWidth="278.0">
          <children>
