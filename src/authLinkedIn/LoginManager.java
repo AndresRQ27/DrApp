@@ -1,9 +1,12 @@
-package login;
+package authLinkedIn;
 
 import java.io.IOException;
 import java.util.logging.*;
+
+import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.*;
+import javafx.scene.layout.StackPane;
 
 /** Manages control flow for logins */
 public class LoginManager {
@@ -23,7 +26,7 @@ public class LoginManager {
 
   /**
    * Callback method invoked to notify that a user has logged out of the main application.
-   * Will show the login application screen.
+   * Will show the authLinkedIn application screen.
    */ 
   public void logout() {
     showLoginScreen();
@@ -31,13 +34,12 @@ public class LoginManager {
   
   public void showLoginScreen() {
     try {
-      FXMLLoader loader = new FXMLLoader(
-        getClass().getResource("login.fxml"));
-      scene.setRoot((Parent) loader.load());
-      LoginController controller = loader.<LoginController>getController();
-      controller.initManager(this);
-    } catch (IOException ex) {
-      Logger.getLogger(LoginManager.class.getName()).log(Level.SEVERE, null, ex);
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
+        scene.setRoot((loader.load()));
+        LoginController controller = loader.<LoginController>getController();
+        controller.initManager(this);
+    }  catch (IOException ex) {
+        Logger.getLogger(LoginManager.class.getName()).log(Level.SEVERE, null, ex);
     }
   }
 

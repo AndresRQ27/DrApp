@@ -1,11 +1,9 @@
-package login;
+package authLinkedIn;
 
-import javafx.event.*;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
-import javafx.scene.image.ImageView;
 
-/** Controls the login screen */
+/** Controls the authLinkedIn screen */
 public class LoginController {
   @FXML private TextField user;
   @FXML private TextField password;
