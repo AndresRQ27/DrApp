@@ -10,8 +10,8 @@ import java.util.List;
  */
 public class Data {
 
-    public static List<String> bloodType = new ArrayList<>();
-    public static List<String> gender = new ArrayList<>();
+    public static final List<String> bloodType = new ArrayList<>();
+    public static final List<String> gender = new ArrayList<>();
 
     public static void Initializer() {
 

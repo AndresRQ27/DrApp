@@ -4,11 +4,8 @@ import java.io.IOException;
 
 import general.ScreenSize;
 import javafx.application.Application;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.layout.*;
-import javafx.scene.paint.Paint;
 import javafx.stage.Stage;
 
 /** Main application class for the authLinkedIn demo application */

@@ -8,9 +8,9 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    //Screen dimensions
-    int width = 1920;
-    int height = 1080;
+    //general.ScreenSize dimensions
+    private final int width = 1920;
+    private final int height = 1080;
 
     @Override
     public void start(Stage primaryStage) throws Exception{

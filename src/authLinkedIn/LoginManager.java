@@ -3,14 +3,12 @@ package authLinkedIn;
 import java.io.IOException;
 import java.util.logging.*;
 
-import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.*;
-import javafx.scene.layout.StackPane;
 
 /** Manages control flow for logins */
-public class LoginManager {
-  private Scene scene;
+class LoginManager {
+  private final Scene scene;
 
   public LoginManager(Scene scene) {
     this.scene = scene;
@@ -37,7 +35,7 @@ public class LoginManager {
     try {
         FXMLLoader loader = new FXMLLoader(getClass().getResource("login.fxml"));
         scene.setRoot((loader.load()));
-        LoginController controller = loader.<LoginController>getController();
+        LoginController controller = loader.getController();
         controller.initManager(this);
     }  catch (IOException ex) {
         Logger.getLogger(LoginManager.class.getName()).log(Level.SEVERE, null, ex);
@@ -48,8 +46,8 @@ public class LoginManager {
   private void showMainView(String sessionID) {
     try {
       FXMLLoader loader = new FXMLLoader(getClass().getResource("mainview.fxml"));
-      scene.setRoot((Parent) loader.load());
-      MainViewController controller = loader.<MainViewController>getController();
+      scene.setRoot(loader.load());
+      MainViewController controller = loader.getController();
       controller.initSessionID(this, sessionID);
     } catch (IOException ex) {
       Logger.getLogger(LoginManager.class.getName()).log(Level.SEVERE, null, ex);

@@ -1,7 +1,5 @@
 package casosClinicos;
 
-import authLinkedIn.LoginController;
-import authLinkedIn.MainViewController;
 import casosClinicos.examenes.ExamenesController;
 import casosClinicos.medicamentos.MedicamentosController;
 import javafx.fxml.FXMLLoader;
@@ -12,15 +10,9 @@ import java.io.IOException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
-/**
- * Created by andres on 17/05/17.
- * DrApp
- * casosClinicos
- */
-
 /** Manages control flow for logins */
 public class CasosManager {
-    private Scene scene;
+    private final Scene scene;
 
     public CasosManager(Scene scene) {
         this.scene = scene;
@@ -39,7 +31,7 @@ public class CasosManager {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("casos.fxml"));
             scene.setRoot((loader.load()));
-            CasosController controller = loader.<CasosController>getController();
+            CasosController controller = loader.getController();
             controller.initManager(this);
         }  catch (IOException ex) {
             Logger.getLogger(CasosManager.class.getName()).log(Level.SEVERE, null, ex);
@@ -50,8 +42,8 @@ public class CasosManager {
     void showMedScreen() {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("medicamentos/medicamentos.fxml"));
-            scene.setRoot((Parent) loader.load());
-            MedicamentosController controller = loader.<MedicamentosController>getController();
+            scene.setRoot(loader.load());
+            MedicamentosController controller = loader.getController();
             controller.initManager(this);
         } catch (IOException ex) {
             Logger.getLogger(CasosManager.class.getName()).log(Level.SEVERE, null, ex);
@@ -61,8 +53,8 @@ public class CasosManager {
     void showExScreen() {
         try {
             FXMLLoader loader = new FXMLLoader(getClass().getResource("examenes/examenes.fxml"));
-            scene.setRoot((Parent) loader.load());
-            ExamenesController controller = loader.<ExamenesController>getController();
+            scene.setRoot(loader.load());
+            ExamenesController controller = loader.getController();
             controller.initManager(this);
         } catch (IOException ex) {
             Logger.getLogger(CasosManager.class.getName()).log(Level.SEVERE, null, ex);
