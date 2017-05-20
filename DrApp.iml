@@ -8,5 +8,28 @@
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/Documents/Java/Jackson" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES />
+        <jarDirectory url="file://$USER_HOME$/Documents/Java/Jackson" recursive="false" />
+      </library>
+    </orderEntry>
+    <orderEntry type="module-library">
+      <library>
+        <CLASSES>
+          <root url="file://$USER_HOME$/Documents/Java/jersey/allJars" />
+        </CLASSES>
+        <JAVADOC />
+        <SOURCES>
+          <root url="file://$USER_HOME$/Documents/Java/jersey/allJars" />
+        </SOURCES>
+        <jarDirectory url="file://$USER_HOME$/Documents/Java/jersey/allJars" recursive="false" />
+        <jarDirectory url="file://$USER_HOME$/Documents/Java/jersey/allJars" recursive="false" type="SOURCES" />
+      </library>
+    </orderEntry>
   </component>
 </module>
