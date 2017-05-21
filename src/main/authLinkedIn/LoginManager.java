@@ -1,4 +1,4 @@
-package authLinkedIn;
+package main.authLinkedIn;
 
 import java.io.IOException;
 import java.util.logging.*;
@@ -24,7 +24,7 @@ class LoginManager {
 
   /**
    * Callback method invoked to notify that a user has logged out of the main application.
-   * Will show the authLinkedIn application screen.
+   * Will show the main.authLinkedIn application screen.
    */ 
   public void logout() {
     showLoginScreen();

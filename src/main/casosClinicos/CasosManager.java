@@ -1,9 +1,8 @@
-package casosClinicos;
+package main.casosClinicos;
 
-import casosClinicos.examenes.ExamenesController;
-import casosClinicos.medicamentos.MedicamentosController;
+import main.casosClinicos.examenes.ExamenesController;
+import main.casosClinicos.medicamentos.MedicamentosController;
 import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
 import javafx.scene.Scene;
 
 import java.io.IOException;
@@ -12,7 +11,7 @@ import java.util.logging.Logger;
 
 /** Manages control flow for logins */
 public class CasosManager {
-    private final Scene scene;
+    public final Scene scene;
 
     public CasosManager(Scene scene) {
         this.scene = scene;
@@ -20,11 +19,8 @@ public class CasosManager {
 
     /**
      * Callback method invoked to notify that a user has logged out of the main application.
-     * Will show the authLinkedIn application screen.
+     * Will show the main.authLinkedIn application screen.
      */
-    public void cancel2CasosScreen() {
-        showCasosScreen();
-    }
 
     //Función para abrir ventana
     public void showCasosScreen() {

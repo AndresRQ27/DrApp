@@ -1,19 +1,19 @@
-package casosClinicos.medicamentos;
+package main.casosClinicos.examenes;
 
-import casosClinicos.CasosManager;
+import main.casosClinicos.CasosManager;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 
 /**
  * Created by andres on 20/05/17.
  * DrApp
- * casosClinicos.medicamentos
+ * main.casosClinicos.medicamentos
  */
-public class MedicamentosController {
+public class ExamenesController {
     @FXML private Button guardar;
     @FXML private Button cancelar;
 
     public void initManager(CasosManager casosManager) {
-        cancelar.setOnAction(event -> casosManager.cancel2CasosScreen());
+        cancelar.setOnAction(event -> casosManager.showCasosScreen());
     }
 }

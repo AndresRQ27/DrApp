@@ -1,4 +1,4 @@
-package authLinkedIn;
+package main.authLinkedIn;
 
 import java.io.IOException;
 
@@ -8,7 +8,7 @@ import javafx.scene.Scene;
 import javafx.scene.layout.*;
 import javafx.stage.Stage;
 
-/** Main application class for the authLinkedIn demo application */
+/** Main application class for the main.authLinkedIn demo application */
 public class LoginDemoApplication extends Application {
 
   public static void main(String[] args) { launch(args); }

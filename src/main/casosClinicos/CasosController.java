@@ -1,15 +1,16 @@
-package casosClinicos;
+package main.casosClinicos;
 
 import general.Data;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.DatePicker;
 import javafx.scene.control.TextField;
+import main.MainManager;
 
 /**
  * Created by andres on 16/05/17.
  * DrApp
- * casosClinicos
+ * main.casosClinicos
  */
 public class CasosController {
     @FXML private DatePicker fecha;
@@ -22,7 +23,6 @@ public class CasosController {
     @FXML private TextField alergias;
     @FXML private TextField sintomas;
     @FXML private Button eliminar;
-    @FXML private Button finalizar;
     @FXML private Button examenes;
     @FXML private Button medicamentos;
     @FXML private Button cancelar;
@@ -31,19 +31,21 @@ public class CasosController {
     public void initialize() {}
 
     //Siempre devovler json con las modificaciones
+
     public void initManager(final CasosManager casosManager) {
-        guardar.setOnAction(event -> {
-            if (verifyData()){
-                //Parsear a json
-            }
-        });
+        initManager(new MainManager(casosManager.scene), casosManager);
+    }
+
+    private void initManager(MainManager mainManager, CasosManager casosManager){
 
         medicamentos.setOnAction(event -> casosManager.showMedScreen());
 
         examenes.setOnAction(event -> casosManager.showExScreen());
 
-        finalizar.setOnAction(event -> {
-            //devolverse a ventana principal
+        guardar.setOnAction(event -> {
+            if (verifyData()){
+                //Parsear a json
+            }
         });
 
         eliminar.setOnAction(event -> {
@@ -51,9 +53,11 @@ public class CasosController {
         });
 
         cancelar.setOnAction(event -> {
-
+            mainManager.showMainScreen();
         });
     }
+
+
 
     //Recibe valores de un json
     public void initViewer(final CasosManager casosManager){
