@@ -13,7 +13,7 @@ import main.MainManager;
  * main.casosClinicos
  */
 public class CasosController {
-    @FXML private DatePicker fecha;
+    @FXML private TextField prioridad;
     @FXML private TextField nombre;
     @FXML private TextField carnet;
     @FXML private TextField genero;
@@ -57,10 +57,8 @@ public class CasosController {
         });
     }
 
-
-
     //Recibe valores de un json
-    public void initViewer(final CasosManager casosManager){
+    public void initViewer(final CasosManager casosManager, String persona){
 
         guardar.setOnAction(event -> {
             if (verifyData()){
@@ -82,7 +80,9 @@ public class CasosController {
             if (Data.bloodType.contains(sangre.getText())){
                 if ((!peso.getText().contains("-") && noLetters(peso.getText()))){
                     if (!estatura.getText().contains("-") && noLetters(estatura.getText())) {
-                        result = true;
+                        if (!prioridad.getText().contains("-") && noLetters(prioridad.getText()) && between1and10(prioridad.getText())) {
+                            result = true;
+                        }
                     }
                 }
             }
@@ -100,6 +100,23 @@ public class CasosController {
         else if (text.contains("i")){result = false;}
         else if (text.contains("o")){result = false;}
         else if (text.contains("u")){result = false;}
+
+        return result;
+    }
+
+    private boolean between1and10(String text){
+        boolean result = false;
+
+        if (text.contains("1")){result = true;}
+        else if (text.contains("2")){result = true;}
+        else if (text.contains("3")){result = true;}
+        else if (text.contains("4")){result = true;}
+        else if (text.contains("5")){result = true;}
+        else if (text.contains("6")){result = true;}
+        else if (text.contains("7")){result = true;}
+        else if (text.contains("8")){result = true;}
+        else if (text.contains("9")){result = true;}
+        else if (text.contains("10")){result = true;}
 
         return result;
     }

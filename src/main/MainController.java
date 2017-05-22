@@ -13,7 +13,7 @@ public class MainController {
     @FXML private Button buscar;
     @FXML private Button chat;
     @FXML private Button agenda;
-    @FXML private Button creditos;
+    @FXML private Button calificaciones;
 
     public void initialize() {}
 
