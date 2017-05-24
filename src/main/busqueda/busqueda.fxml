@@ -4,10 +4,12 @@
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
-
 
 <StackPane prefHeight="680.0" prefWidth="1240.0" stylesheets="/main/main.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.busqueda.BusquedaController">
    <children>
@@ -22,22 +24,63 @@
                   </Label>
                </children>
             </AnchorPane>
-            <AnchorPane prefHeight="397.0" prefWidth="1240.0">
+            <GridPane prefHeight="591.0" prefWidth="1240.0">
+              <columnConstraints>
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="370.0" minWidth="10.0" prefWidth="370.0" />
+                <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="775.0" minWidth="10.0" prefWidth="768.0" />
+                  <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="759.0" minWidth="10.0" prefWidth="168.0" />
+              </columnConstraints>
+              <rowConstraints>
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+                  <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+              </rowConstraints>
                <children>
-                  <Label layoutX="180.0" layoutY="184.0" text="Caso Clinico:">
+                  <TextField fx:id="busqueda" prefHeight="26.0" prefWidth="500.0" GridPane.columnIndex="1" />
+                  <Label text="Busqueda">
                      <font>
-                        <Font size="21.0" />
+                        <Font size="19.0" />
                      </font>
                   </Label>
-                  <TextField fx:id="busqueda" layoutX="411.0" layoutY="184.0" prefHeight="26.0" prefWidth="500.0" />
+                  <Button fx:id="buscar" mnemonicParsing="false" prefHeight="26.0" prefWidth="85.0" text="Buscar" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.rowIndex="12" />
+                  <Button fx:id="cancelar" mnemonicParsing="false" prefHeight="26.0" prefWidth="85.0" text="Cancelar" GridPane.columnIndex="2" GridPane.halignment="CENTER" GridPane.rowIndex="12" />
+                  <Label text="Resultados" GridPane.columnIndex="1" GridPane.rowIndex="1">
+                     <font>
+                        <Font size="22.0" />
+                     </font>
+                  </Label>
+                  <Button disable="true" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+                  <Button disable="true" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+                  <Button disable="true" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+                  <Button disable="true" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+                  <Button disable="true" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+                  <Button disable="true" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+                  <Button disable="true" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+                  <Button disable="true" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+                  <Button disable="true" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+                  <Button disable="true" mnemonicParsing="false" text="Button" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+                  <TextField disable="true" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+                  <TextField disable="true" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+                  <TextField disable="true" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+                  <TextField disable="true" GridPane.columnIndex="1" GridPane.rowIndex="5" />
+                  <TextField disable="true" GridPane.columnIndex="1" GridPane.rowIndex="6" />
+                  <TextField disable="true" GridPane.columnIndex="1" GridPane.rowIndex="7" />
+                  <TextField disable="true" GridPane.columnIndex="1" GridPane.rowIndex="8" />
+                  <TextField disable="true" GridPane.columnIndex="1" GridPane.rowIndex="9" />
+                  <TextField disable="true" GridPane.columnIndex="1" GridPane.rowIndex="10" />
+                  <TextField disable="true" GridPane.columnIndex="1" GridPane.rowIndex="11" />
                </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="200.0" prefWidth="200.0">
-               <children>
-                  <Button fx:id="cancelar" layoutX="1088.0" layoutY="156.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="85.0" text="Cancelar" />
-                  <Button fx:id="buscar" layoutX="916.0" layoutY="156.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="85.0" text="Buscar" />
-               </children>
-            </AnchorPane>
+            </GridPane>
          </children>
       </VBox>
    </children>

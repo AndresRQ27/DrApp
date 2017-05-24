@@ -13,17 +13,18 @@ public class MainController {
     @FXML private Button buscar;
     @FXML private Button chat;
     @FXML private Button agenda;
+    @FXML private Button citas;
     @FXML private Button calificaciones;
 
     public void initialize() {}
 
     public void initManager(final MainManager mainManager) {
-        nuevo.setOnAction(event -> {
-            mainManager.showCasosScreen();
-        });
+        nuevo.setOnAction(event -> mainManager.showCasosScreen());
 
         buscar.setOnAction(event -> mainManager.showBusquedaScreen());
 
         chat.setOnAction(event -> mainManager.showChatScreen());
+
+
     }
 }
