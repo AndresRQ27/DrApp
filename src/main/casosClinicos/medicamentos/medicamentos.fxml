@@ -2,37 +2,88 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
-<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.control.TextField?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.RowConstraints?>
 <?import javafx.scene.layout.StackPane?>
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane prefHeight="680.0" prefWidth="1240.0" stylesheets="/main/main.css" xmlns="http://javafx.com/javafx/8.0.112"
-           xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.casosClinicos.medicamentos.MedicamentosController">
+<StackPane prefHeight="680.0" prefWidth="1240.0" stylesheets="/main/main.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.casosClinicos.medicamentos.MedicamentosController">
    <VBox prefHeight="200.0" prefWidth="100.0" StackPane.alignment="TOP_CENTER">
       <AnchorPane prefHeight="121.0" prefWidth="600.0">
-         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="510.0" layoutY="42.0" text="Medicamentos"
-                textFill="WHITE">
+         <Label alignment="CENTER" contentDisplay="CENTER" layoutX="493.0" layoutY="42.0" prefHeight="36.0" prefWidth="230.0" text="Medicamentos">
             <font>
-               <Font size="30.0"/>
+               <Font size="30.0" />
             </font>
          </Label>
       </AnchorPane>
-      <TextArea prefHeight="476.0" prefWidth="1240.0" promptText="Lista de medicamentos">
-         <font>
-            <Font size="16.0"/>
-         </font>
-      </TextArea>
+      <GridPane prefHeight="485.0" prefWidth="1240.0">
+         <columnConstraints>
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="588.0" minWidth="10.0" prefWidth="584.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="404.0" minWidth="10.0" prefWidth="66.0" />
+            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="606.0" minWidth="10.0" prefWidth="590.0" />
+         </columnConstraints>
+         <rowConstraints>
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="39.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="35.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="38.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="39.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="39.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="38.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="39.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="39.0" vgrow="SOMETIMES" />
+            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="43.0" vgrow="SOMETIMES" />
+         </rowConstraints>
+         <children>
+            <Label text="Nombre">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <Label text="Costo" GridPane.columnIndex="2">
+               <font>
+                  <Font size="26.0" />
+               </font>
+            </Label>
+            <TextField fx:id="n0" alignment="CENTER" GridPane.rowIndex="1" />
+            <TextField fx:id="n1" alignment="CENTER" GridPane.rowIndex="2" />
+            <TextField fx:id="n2" alignment="CENTER" GridPane.rowIndex="3" />
+            <TextField fx:id="n3" alignment="CENTER" GridPane.rowIndex="4" />
+            <TextField fx:id="n4" alignment="CENTER" GridPane.rowIndex="5" />
+            <TextField fx:id="n5" alignment="CENTER" GridPane.rowIndex="6" />
+            <TextField fx:id="n6" alignment="CENTER" GridPane.rowIndex="7" />
+            <TextField fx:id="n7" alignment="CENTER" GridPane.rowIndex="8" />
+            <TextField fx:id="n8" alignment="CENTER" GridPane.rowIndex="9" />
+            <TextField fx:id="n9" alignment="CENTER" GridPane.rowIndex="10" />
+            <TextField fx:id="n10" alignment="CENTER" GridPane.rowIndex="11" />
+            <TextField fx:id="c0" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+            <TextField fx:id="c1" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+            <TextField fx:id="c2" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+            <TextField fx:id="c3" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4" />
+            <TextField fx:id="c4" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5" />
+            <TextField fx:id="c5" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="6" />
+            <TextField fx:id="c6" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="7" />
+            <TextField fx:id="c7" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="8" />
+            <TextField fx:id="c8" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="9" />
+            <TextField fx:id="c9" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="10" />
+            <TextField fx:id="c10" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="11" />
+         </children>
+      </GridPane>
       <AnchorPane prefHeight="86.0" prefWidth="1240.0">
          <Button fx:id="cancelar" layoutX="1105.0" layoutY="27.0" mnemonicParsing="false" text="Cancelar">
             <font>
-               <Font name="Arial" size="16.0"/>
+               <Font name="Arial" size="16.0" />
             </font>
          </Button>
          <Button fx:id="guardar" layoutX="977.0" layoutY="27.0" mnemonicParsing="false" text="Guardar">
             <font>
-               <Font name="Arial" size="16.0"/>
+               <Font name="Arial" size="16.0" />
             </font>
          </Button>
       </AnchorPane>

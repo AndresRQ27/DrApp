@@ -4,6 +4,7 @@ import main.casosClinicos.CasosController;
 import main.casosClinicos.CasosManager;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import main.chat.ChatManager;
 
 import java.io.IOException;
 import java.util.logging.Level;
@@ -40,5 +41,5 @@ public class MainManager {
         new CasosManager(this.scene).showCasosScreen();
     }
 
-
+    public void showChatScreen(){new ChatManager(this.scene).showChatScreen();}
 }

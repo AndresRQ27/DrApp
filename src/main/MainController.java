@@ -22,6 +22,6 @@ public class MainController {
             mainManager.showCasosScreen();
         });
 
-
+        chat.setOnAction(event -> mainManager.showChatScreen());
     }
 }
