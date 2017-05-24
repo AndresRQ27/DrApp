@@ -22,6 +22,8 @@ public class MainController {
             mainManager.showCasosScreen();
         });
 
+        buscar.setOnAction(event -> mainManager.showBusquedaScreen());
+
         chat.setOnAction(event -> mainManager.showChatScreen());
     }
 }

@@ -1,5 +1,6 @@
 package main;
 
+import main.busqueda.BusquedaManager;
 import main.casosClinicos.CasosController;
 import main.casosClinicos.CasosManager;
 import javafx.fxml.FXMLLoader;
@@ -42,4 +43,6 @@ public class MainManager {
     }
 
     public void showChatScreen(){new ChatManager(this.scene).showChatScreen();}
+
+    public void showBusquedaScreen() {new BusquedaManager(this.scene).showBusquedaScreen();}
 }
