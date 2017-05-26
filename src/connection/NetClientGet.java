@@ -1,10 +1,5 @@
 package connection;
 
-/**
- * Created by andres on 25/05/17.
- * DrApp
- * connection
- */
 import org.json.simple.JSONArray;
 import org.json.simple.JSONObject;
 import org.json.simple.parser.JSONParser;
@@ -17,7 +12,8 @@ import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
 import java.net.URL;
 
-public class NetClientGet {
+@SuppressWarnings("ALL")
+class NetClientGet {
 
     public static JSONArray NetClientGet(String url) throws ParseException {
 
@@ -37,6 +33,7 @@ public class NetClientGet {
 
                 JSONParser jsonParser = new JSONParser();
                 JSONObject jsonObject = (JSONObject) jsonParser.parse(output);
+                //noinspection unchecked
                 jsonArray.add(jsonObject);
 
             } catch (Exception e) {
@@ -45,9 +42,6 @@ public class NetClientGet {
 
             connection.disconnect();
             return jsonArray;
-
-        } catch (MalformedURLException e){
-            e.printStackTrace();
 
         } catch (IOException e) {
             e.printStackTrace();

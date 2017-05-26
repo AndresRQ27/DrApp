@@ -1,11 +1,8 @@
 package connection;
 
-import org.json.simple.JSONArray;
 import org.json.simple.parser.ParseException;
 
-import java.io.BufferedReader;
 import java.io.IOException;
-import java.io.InputStreamReader;
 import java.io.OutputStream;
 import java.net.HttpURLConnection;
 import java.net.MalformedURLException;
@@ -16,9 +13,10 @@ import java.net.URL;
  * DrApp
  * connection
  */
-public class NetClientPost {
+@SuppressWarnings("ALL")
+class NetClientPost {
 
-    public static void NetClientPost(String url, String input) throws ParseException {
+    public static void NetClientPost(String url, String input) {
 
         try {
 
@@ -38,10 +36,6 @@ public class NetClientPost {
             }
 
             connection.disconnect();
-
-        } catch (MalformedURLException e) {
-
-            e.printStackTrace();
 
         } catch (IOException e) {
 
