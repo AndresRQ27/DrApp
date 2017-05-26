@@ -2,7 +2,6 @@ package main.busqueda;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import main.chat.ChatController;
 import main.chat.ChatManager;
 
 import java.io.IOException;
@@ -15,7 +14,7 @@ import java.util.logging.Logger;
  * main.busqueda
  */
 public class BusquedaManager {
-    public Scene scene;
+    public final Scene scene;
 
     public BusquedaManager(Scene scene){this.scene = scene;}
 

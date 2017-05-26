@@ -8,10 +8,10 @@ import java.util.List;
  * DrApp
  * general
  */
-public class Data {
+class Data {
 
-    public static final List<String> bloodType = new ArrayList<>();
-    public static final List<String> gender = new ArrayList<>();
+    private static final List<String> bloodType = new ArrayList<>();
+    private static final List<String> gender = new ArrayList<>();
 
     public static void Initializer() {
 

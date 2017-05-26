@@ -46,9 +46,7 @@ public class CasosController {
             //devolver un json vacio y ventana principal
         });
 
-        cancelar.setOnAction(event -> {
-            mainManager.showMainScreen();
-        });
+        cancelar.setOnAction(event -> mainManager.showMainScreen());
     }
 
 

@@ -4,7 +4,7 @@ import javafx.fxml.FXML;
 import javafx.scene.control.*;
 
 /** Controls the main.authLinkedIn screen */
-public class LoginController {
+class LoginController {
   @FXML private TextField user;
   @FXML private TextField password;
   @FXML private Button loginButton;

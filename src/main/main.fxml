@@ -7,30 +7,29 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane prefHeight="680.0" prefWidth="1240.0" stylesheets="/main/main.css" xmlns="http://javafx.com/javafx/8.0.112" xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainController">
-   <children>
-      <VBox prefHeight="200.0" prefWidth="100.0">
-         <children>
-            <AnchorPane prefHeight="85.0" prefWidth="600.0">
-               <children>
-                  <Label layoutX="559.0" layoutY="19.0" text="DrApp" textFill="WHITE">
-                     <font>
-                        <Font name="Arial Bold Italic" size="40.0" />
-                     </font>
-                  </Label>
-               </children>
-            </AnchorPane>
-            <AnchorPane prefHeight="598.0" prefWidth="1240.0">
-               <children>
-                  <Button fx:id="nuevo" layoutX="483.0" layoutY="66.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="275.0" text="Nuevo Caso Clinico" />
-                  <Button fx:id="buscar" layoutX="483.0" layoutY="150.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="275.0" text="Buscar Caso Clinico" />
-                  <Button fx:id="chat" layoutX="483.0" layoutY="236.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="275.0" text="Chat" />
-                  <Button fx:id="agenda" layoutX="483.0" layoutY="326.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="275.0" text="Agenda" />
-                  <Button fx:id="citas" layoutX="483.0" layoutY="412.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="275.0" text="Button" />
-                  <Button fx:id="calificaciones" layoutX="483.0" layoutY="498.0" mnemonicParsing="false" prefHeight="50.0" prefWidth="275.0" text="Calificaciones" />
-               </children>
-            </AnchorPane>
-         </children>
-      </VBox>
-   </children>
+<StackPane prefHeight="680.0" prefWidth="1240.0" stylesheets="/main/main.css" xmlns="http://javafx.com/javafx/8.0.112"
+           xmlns:fx="http://javafx.com/fxml/1" fx:controller="main.MainController">
+   <VBox prefHeight="200.0" prefWidth="100.0">
+      <AnchorPane prefHeight="85.0" prefWidth="600.0">
+         <Label layoutX="559.0" layoutY="19.0" text="DrApp" textFill="WHITE">
+            <font>
+               <Font name="Arial Bold Italic" size="40.0"/>
+            </font>
+         </Label>
+      </AnchorPane>
+      <AnchorPane prefHeight="598.0" prefWidth="1240.0">
+         <Button fx:id="nuevo" layoutX="483.0" layoutY="66.0" mnemonicParsing="false" prefHeight="50.0"
+                 prefWidth="275.0" text="Nuevo Caso Clinico"/>
+         <Button fx:id="buscar" layoutX="483.0" layoutY="150.0" mnemonicParsing="false" prefHeight="50.0"
+                 prefWidth="275.0" text="Buscar Caso Clinico"/>
+         <Button fx:id="chat" layoutX="483.0" layoutY="236.0" mnemonicParsing="false" prefHeight="50.0"
+                 prefWidth="275.0" text="Chat"/>
+         <Button fx:id="agenda" layoutX="483.0" layoutY="326.0" mnemonicParsing="false" prefHeight="50.0"
+                 prefWidth="275.0" text="Agenda"/>
+         <Button fx:id="citas" layoutX="483.0" layoutY="412.0" mnemonicParsing="false" prefHeight="50.0"
+                 prefWidth="275.0" text="Citas"/>
+         <Button fx:id="calificaciones" layoutX="483.0" layoutY="498.0" mnemonicParsing="false" prefHeight="50.0"
+                 prefWidth="275.0" text="Calificaciones"/>
+      </AnchorPane>
+   </VBox>
 </StackPane>

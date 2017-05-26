@@ -1,7 +1,6 @@
 package main;
 
 import main.busqueda.BusquedaManager;
-import main.casosClinicos.CasosController;
 import main.casosClinicos.CasosManager;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
@@ -17,7 +16,7 @@ import java.util.logging.Logger;
  * main
  */
 public class MainManager {
-    public final Scene scene;
+    private final Scene scene;
 
     public MainManager(Scene scene) {
         this.scene = scene;
@@ -38,11 +37,11 @@ public class MainManager {
         }
     }
 
-    public void showCasosScreen() {
+    void showCasosScreen() {
         new CasosManager(this.scene).showCasosScreen();
     }
 
-    public void showChatScreen(){new ChatManager(this.scene).showChatScreen();}
+    void showChatScreen(){new ChatManager(this.scene).showChatScreen();}
 
-    public void showBusquedaScreen() {new BusquedaManager(this.scene).showBusquedaScreen();}
+    void showBusquedaScreen() {new BusquedaManager(this.scene).showBusquedaScreen();}
 }

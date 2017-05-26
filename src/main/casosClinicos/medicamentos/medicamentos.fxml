@@ -20,61 +20,73 @@
             </font>
          </Label>
       </AnchorPane>
-      <GridPane prefHeight="485.0" prefWidth="1240.0">
-         <columnConstraints>
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="588.0" minWidth="10.0" prefWidth="584.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="404.0" minWidth="10.0" prefWidth="66.0" />
-            <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="606.0" minWidth="10.0" prefWidth="590.0" />
-         </columnConstraints>
-         <rowConstraints>
-            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="39.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="35.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="38.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="39.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="39.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="38.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="39.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="39.0" vgrow="SOMETIMES" />
-            <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="43.0" vgrow="SOMETIMES" />
-         </rowConstraints>
-         <children>
-            <Label text="Nombre">
-               <font>
-                  <Font size="26.0" />
-               </font>
-            </Label>
-            <Label text="Costo" GridPane.columnIndex="2">
-               <font>
-                  <Font size="26.0" />
-               </font>
-            </Label>
-            <TextField fx:id="n0" alignment="CENTER" GridPane.rowIndex="1" />
-            <TextField fx:id="n1" alignment="CENTER" GridPane.rowIndex="2" />
-            <TextField fx:id="n2" alignment="CENTER" GridPane.rowIndex="3" />
-            <TextField fx:id="n3" alignment="CENTER" GridPane.rowIndex="4" />
-            <TextField fx:id="n4" alignment="CENTER" GridPane.rowIndex="5" />
-            <TextField fx:id="n5" alignment="CENTER" GridPane.rowIndex="6" />
-            <TextField fx:id="n6" alignment="CENTER" GridPane.rowIndex="7" />
-            <TextField fx:id="n7" alignment="CENTER" GridPane.rowIndex="8" />
-            <TextField fx:id="n8" alignment="CENTER" GridPane.rowIndex="9" />
-            <TextField fx:id="n9" alignment="CENTER" GridPane.rowIndex="10" />
-            <TextField fx:id="n10" alignment="CENTER" GridPane.rowIndex="11" />
-            <TextField fx:id="c0" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1" />
-            <TextField fx:id="c1" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2" />
-            <TextField fx:id="c2" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3" />
-            <TextField fx:id="c3" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4" />
-            <TextField fx:id="c4" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5" />
-            <TextField fx:id="c5" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="6" />
-            <TextField fx:id="c6" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="7" />
-            <TextField fx:id="c7" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="8" />
-            <TextField fx:id="c8" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="9" />
-            <TextField fx:id="c9" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="10" />
-            <TextField fx:id="c10" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="11" />
-         </children>
-      </GridPane>
+       <GridPane prefHeight="485.0" prefWidth="1240.0">
+           <columnConstraints>
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="588.0" minWidth="10.0"
+                                  prefWidth="584.0"/>
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="404.0" minWidth="10.0"
+                                  prefWidth="66.0"/>
+               <ColumnConstraints halignment="CENTER" hgrow="SOMETIMES" maxWidth="606.0" minWidth="10.0"
+                                  prefWidth="590.0"/>
+           </columnConstraints>
+           <rowConstraints>
+               <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" vgrow="SOMETIMES"/>
+               <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="39.0"
+                               vgrow="SOMETIMES"/>
+               <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="35.0"
+                               vgrow="SOMETIMES"/>
+               <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="38.0"
+                               vgrow="SOMETIMES"/>
+               <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0"
+                               vgrow="SOMETIMES"/>
+               <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="39.0"
+                               vgrow="SOMETIMES"/>
+               <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="39.0"
+                               vgrow="SOMETIMES"/>
+               <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="38.0"
+                               vgrow="SOMETIMES"/>
+               <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="39.0"
+                               vgrow="SOMETIMES"/>
+               <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="40.0"
+                               vgrow="SOMETIMES"/>
+               <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="39.0"
+                               vgrow="SOMETIMES"/>
+               <RowConstraints maxHeight="1.7976931348623157E308" minHeight="-Infinity" prefHeight="43.0"
+                               vgrow="SOMETIMES"/>
+           </rowConstraints>
+           <Label text="Nombre">
+              <font>
+                  <Font size="26.0"/>
+              </font>
+           </Label>
+           <Label text="Costo" GridPane.columnIndex="2">
+              <font>
+                  <Font size="26.0"/>
+              </font>
+           </Label>
+           <TextField fx:id="n0" alignment="CENTER" GridPane.rowIndex="1"/>
+           <TextField fx:id="n1" alignment="CENTER" GridPane.rowIndex="2"/>
+           <TextField fx:id="n2" alignment="CENTER" GridPane.rowIndex="3"/>
+           <TextField fx:id="n3" alignment="CENTER" GridPane.rowIndex="4"/>
+           <TextField fx:id="n4" alignment="CENTER" GridPane.rowIndex="5"/>
+           <TextField fx:id="n5" alignment="CENTER" GridPane.rowIndex="6"/>
+           <TextField fx:id="n6" alignment="CENTER" GridPane.rowIndex="7"/>
+           <TextField fx:id="n7" alignment="CENTER" GridPane.rowIndex="8"/>
+           <TextField fx:id="n8" alignment="CENTER" GridPane.rowIndex="9"/>
+           <TextField fx:id="n9" alignment="CENTER" GridPane.rowIndex="10"/>
+           <TextField fx:id="n10" alignment="CENTER" GridPane.rowIndex="11"/>
+           <TextField fx:id="c0" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="1"/>
+           <TextField fx:id="c1" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="2"/>
+           <TextField fx:id="c2" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="3"/>
+           <TextField fx:id="c3" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="4"/>
+           <TextField fx:id="c4" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="5"/>
+           <TextField fx:id="c5" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="6"/>
+           <TextField fx:id="c6" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="7"/>
+           <TextField fx:id="c7" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="8"/>
+           <TextField fx:id="c8" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="9"/>
+           <TextField fx:id="c9" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="10"/>
+           <TextField fx:id="c10" alignment="CENTER" GridPane.columnIndex="2" GridPane.rowIndex="11"/>
+       </GridPane>
       <AnchorPane prefHeight="86.0" prefWidth="1240.0">
          <Button fx:id="cancelar" layoutX="1105.0" layoutY="27.0" mnemonicParsing="false" text="Cancelar">
             <font>

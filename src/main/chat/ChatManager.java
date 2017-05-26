@@ -2,7 +2,6 @@ package main.chat;
 
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
-import main.casosClinicos.CasosController;
 
 import java.io.IOException;
 import java.util.logging.Level;
@@ -14,7 +13,7 @@ import java.util.logging.Logger;
  * main.chat
  */
 public class ChatManager {
-    public Scene scene;
+    public final Scene scene;
 
     public ChatManager(Scene scene){this.scene = scene;}
 

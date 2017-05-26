@@ -1,16 +1,14 @@
 package main.chat;
 
 import javafx.fxml.FXML;
-import javafx.scene.control.*;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import main.MainManager;
 
-
-import java.awt.*;
-
 /**
  * Created by andre on 22/5/2017.
+ * DrApp
+ * ${PACKAGE_NAME}
  */
 public class ChatController {
 
