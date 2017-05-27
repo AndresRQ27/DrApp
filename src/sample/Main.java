@@ -8,14 +8,12 @@ import javafx.stage.Stage;
 
 public class Main extends Application {
 
-    //general.ScreenSize dimensions
-    private final int width = 1920;
-    private final int height = 1080;
-
     @Override
     public void start(Stage primaryStage) throws Exception{
         Parent root = FXMLLoader.load(getClass().getResource("sample.fxml"));
         primaryStage.setTitle("Hello World");
+        int height = 1080;
+        int width = 1920;
         primaryStage.setScene(new Scene(root, width, height));
         primaryStage.show();
     }

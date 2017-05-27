@@ -8,23 +8,7 @@ import java.util.List;
  * DrApp
  * general
  */
-class Data {
+public class Data {
 
-    private static final List<String> bloodType = new ArrayList<>();
-    private static final List<String> gender = new ArrayList<>();
-
-    public static void Initializer() {
-
-        bloodType.add("AB+");
-        bloodType.add("AB-");
-        bloodType.add("A+");
-        bloodType.add("A-");
-        bloodType.add("B+");
-        bloodType.add("B-");
-        bloodType.add("O+");
-        bloodType.add("O-");
-
-        gender.add("Masculino");
-        gender.add("Femenino");
-    }
+    public static int id = 0;
 }

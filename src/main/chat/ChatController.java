@@ -23,8 +23,11 @@ public class ChatController {
 
     private void initManager(final ChatManager chatManager, MainManager mainManager){
         cancelar.setOnAction(event -> mainManager.showMainScreen());
-        enviar.setOnAction(event -> imprimir());
+        enviar.setOnAction(event -> imprimir(para.getText(), mensajePara.getText()));
     }
 
-    private void imprimir(){}
+    private void imprimir(String de, String mensajeDe){
+        this.para.setText(de);
+        this.mensajePara.setText(mensajeDe);
+    }
 }

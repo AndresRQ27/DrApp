@@ -39,7 +39,7 @@ public class MainManager {
     }
 
     void showCasosScreen() {
-        new CasosManager(this.scene).showCasosScreen();
+        new CasosManager(this.scene).showCrearCasosScreen();
     }
 
     void showChatScreen(){new ChatManager(this.scene).showChatScreen();}
