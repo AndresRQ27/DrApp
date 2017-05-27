@@ -25,6 +25,6 @@ public class MainController {
 
         chat.setOnAction(event -> mainManager.showChatScreen());
 
-
+        citas.setOnAction(event -> mainManager.showCitasScreen());
     }
 }

@@ -14,9 +14,9 @@ import java.net.URL;
  * connection
  */
 @SuppressWarnings("ALL")
-class NetClientPost {
+public class NetClientPost {
 
-    public static void NetClientPost(String url, String input) {
+    public static void NetClientPost(String url, String output) {
 
         try {
 
@@ -27,7 +27,7 @@ class NetClientPost {
             connection.setRequestProperty("Content-Type", "Application/json");
 
             OutputStream outputStream = connection.getOutputStream();
-            outputStream.write(input.getBytes());
+            outputStream.write(output.getBytes());
             outputStream.flush();
 
             if (connection.getResponseCode() != HttpURLConnection.HTTP_CREATED) {

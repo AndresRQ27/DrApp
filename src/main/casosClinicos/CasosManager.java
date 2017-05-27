@@ -1,9 +1,12 @@
 package main.casosClinicos;
 
+import connection.NetClientPost;
+import general.URLName;
 import main.casosClinicos.examenes.ExamenesController;
 import main.casosClinicos.medicamentos.MedicamentosController;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
+import sun.security.krb5.internal.NetClient;
 
 import java.io.IOException;
 import java.util.logging.Level;
@@ -55,5 +58,11 @@ public class CasosManager {
         } catch (IOException ex) {
             Logger.getLogger(CasosManager.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+
+    public void guardarCaso(String text) {
+        String url = URLName.getInstance() + "/CasosClinicos";
+        String output = "{\"nombre\": \"" + text + "\"}";
+        NetClientPost.NetClientPost(url, output);
     }
 }

@@ -35,15 +35,28 @@ public class CasosController {
 
     private void initManager(MainManager mainManager, CasosManager casosManager) {
 
-        medicamentos.setOnAction(event -> casosManager.showMedScreen());
+        medicamentos.setOnAction(event -> {
+                    if (!nombre.getText().isEmpty()) {
+                        casosManager.guardarCaso(nombre.getText());
+                        casosManager.showMedScreen();
+                    }
+        });
 
-        examenes.setOnAction(event -> casosManager.showExScreen());
+        examenes.setOnAction(event -> {
+            if (!nombre.getText().isEmpty()) {
+                casosManager.guardarCaso(nombre.getText());
+                casosManager.showExScreen();
+            }
+        });
 
         guardar.setOnAction(event -> {
+            if (!nombre.getText().isEmpty()) {
+                casosManager.guardarCaso(nombre.getText());
+            }
         });
 
         eliminar.setOnAction(event -> {
-            //devolver un json vacio y ventana principal
+
         });
 
         cancelar.setOnAction(event -> mainManager.showMainScreen());

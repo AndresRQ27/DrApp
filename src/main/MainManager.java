@@ -5,6 +5,7 @@ import main.casosClinicos.CasosManager;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Scene;
 import main.chat.ChatManager;
+import main.citas.CitasManager;
 
 import java.io.IOException;
 import java.util.logging.Level;
@@ -44,4 +45,8 @@ public class MainManager {
     void showChatScreen(){new ChatManager(this.scene).showChatScreen();}
 
     void showBusquedaScreen() {new BusquedaManager(this.scene).showBusquedaScreen();}
+
+    void showCitasScreen() {
+        new CitasManager(this.scene).showCitasScreen();
+    }
 }

@@ -13,7 +13,7 @@ import java.net.MalformedURLException;
 import java.net.URL;
 
 @SuppressWarnings("ALL")
-class NetClientGet {
+public class NetClientGet {
 
     public static JSONArray NetClientGet(String url) throws ParseException {
 
